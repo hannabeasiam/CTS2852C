@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript displayName()</title>
+    <script type="text/javascript">
+	  function displayName(firstName, secondName = '') {
+	    var fullName = firstName + ' ' + secondName;
+      return fullName;
+	  }
+    let myFirstName = prompt('Enter your first name', 'George');
+    let myLastName = prompt('Enter your last name', 'Cooke');
+    let nameOne = 'Minnie';
+    let nameTwo = 'Mouse';
+    </script>
+  </head>
+  <body>
+    <h2>CIW JavaScript Specialist</h2>
+    <h3>displayName(firstName,lastName)</h3>
+    <script type="text/javascript">
+      document.write('<p>' + displayName(myFirstName, myLastName) + '</p>');
+    </script>
+    <p>this is some more text</p>
+    <script type="text/javascript">
+      document.write(displayName('Mickey', 'Mouse') + '<br>');
+      document.write(displayName('Goofy', 'Dog') + '<br>');
+      document.write(displayName('Daffie', 'Duck') + '<br>');
+      document.write(displayName(nameOne, nameTwo) + '<br>');
+      document.write(displayName('Daffie') + '<br>');
+    </script>
+  </body>
+</html>

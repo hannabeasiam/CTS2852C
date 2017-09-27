@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hoisting</title>
+    <script type="text/javascript">
+      hoistOutput = 'Hello World!';
+      var hoistOutput;
+      
+      letOutput = 'No go!!!';
+      let letOutput;
+      
+      // var hoistOutput;
+      // hoistOutput = 'Hello World!';
+    </script>
+  </head>
+  <body>
+    <h2>CIW JavaScript Specialist</h2>
+    <h3>Hoisting</h3>
+    <script type="text/javascript">
+      document.write(hoistOutput);
+      document.write(letOutput);
+    </script>
+  </body>
+</html>
