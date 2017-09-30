@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+    <!-- First Page -->
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>2017 BC Hackathon</h1>
+      </div>
+      <div role="main" class="ui-content">
+        Content
+      </div>
+      <div data-role="footer">
+        <a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="b">Home</a>
+        <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+        <a href="#email" data-role="button" data-inline="true" data-icon="mail">Email</a>
+        <a href="#phone" data-role="button" data-inline="true" data-icon="phone">Telephone</a>
+        <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+      </div>
+    </div>
+    
+    <!-- Second Page -->
+    <div data-role="page" id="location">
+
+      <div data-role="header">
+        <h1>Location</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        Content
+      </div>
+      <div data-role="footer">
+        <div data-role="navbar" data-grid="d">
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#location" class="ui-btn-active">Location</a></li>
+              <li><a href="#email">Email</a></li>
+              <li><a href="#telephone">Telephone</a></li>
+              <li><a href="#settings">Settings</a></li>
+          </ul>
+        </div>
+      </div><!-- /navbar -->
+    </div>
+     <!-- Email page -->
+    <div data-role="page" id="email">
+
+      <div data-role="header">
+        <h1>Email</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <a href="#popupUndismissible" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Undismissible Popup</a>
+        <div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
+          <div data-role="popup" id="popupUndismissible" class="ui-content" style="max-width:280px" data-dismissible="false">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+            <p>I have the <code>data-dismissible</code> attribute set to <code>false</code>. I'm not closeable by clicking outside of me.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /content -->
+
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail" data-theme="b">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- Phone /page -->
+    <div data-role="page" id="phone">
+
+      <div data-role="header">
+        <h1>Telephone</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <p>Telephone</p>
+      </div>
+      <!-- /content -->
+
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone" data-theme="b">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+ </body>
+</html>

@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body class="ui-body ui-body-a">
+    <div data-role="page" id="home">
+
+      <div class="ui-bar-b" data-role="header">
+        <h1>2017 BC Hackathon</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <ul data-role="listview">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#">Mentors</a></li>
+        </ul>
+      </div>
+      <!-- /content -->
+
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="b">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+    <div data-role="page" id="location">
+
+      <div data-role="header">
+        <h1>Location</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d753.361899338365!2d-80.23413192882954!3d26.078890650812195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a82ce3b9aad9%3A0xcbf1d50c9fb624a0!2sBroward+College!5e0!3m2!1sen!2sus!4v1506738578128" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <!-- /content -->
+
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home" data-iconpos="top">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location" data-iconpos="top" data-theme="b">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail" data-iconpos="top">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone" data-iconpos="top">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear" data-iconpos="top">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+    <div data-role="page" id="email">
+
+      <div data-role="header">
+        <h1>Email</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <a href="#popupUndismissible" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Undismissible Popup</a>
+        <div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
+          <div data-role="popup" id="popupUndismissible" class="ui-content" style="max-width:280px" data-dismissible="false">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+            <p>I have the <code>data-dismissible</code> attribute set to <code>false</code>. I'm not closeable by clicking outside of me.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /content -->
+
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail" data-theme="b">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+    <div data-role="page" id="phone">
+
+      <div data-role="header">
+        <h1>Telephone</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <p>Telephone</p>
+      </div>
+      <!-- /content -->
+
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone" data-theme="b">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+    <div data-role="page" id="settings">
+
+      <div data-role="header">
+        <h1>Settings</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup">
+            <legend>Choose as many snacks as you'd like:</legend>
+            <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom" />
+            <label for="checkbox-1a">Cheetos</label>
+
+            <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+            <label for="checkbox-2a">Doritos</label>
+
+            <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+            <label for="checkbox-3a">Fritos</label>
+
+            <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+            <label for="checkbox-4a">Sun Chips</label>
+          </fieldset>
+          <div data-role="fieldcontain">
+            <label for="slider2">Flip switch:</label>
+            <select name="slider2" id="slider2" data-role="slider">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+              </select>
+          </div>
+          <div data-role="fieldcontain">
+              <label for="slider">Value:</label>
+              <input type="range" name="slider" id="slider" value="0" min="0" max="100" />
+            </div>
+        
+          <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+              <legend>Choose a pet:</legend>
+              <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+              <label for="radio-choice-1">Cat</label>
+
+              <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" />
+              <label for="radio-choice-2">Dog</label>
+
+              <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3" />
+              <label for="radio-choice-3">Hamster</label>
+
+              <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4" />
+              <label for="radio-choice-4">Lizard</label>
+            </fieldset>
+          </div>
+          <div data-role="fieldcontain">
+            <label for="select-choice-a" class="select">Choose shipping method:</label>
+            <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+                <option>Custom menu example</option>
+                <option value="standard">Standard: 7 day</option>
+                <option value="rush">Rush: 3 days</option>
+                <option value="express">Express: next day</option>
+                <option value="overnight">Overnight</option>
+              </select>
+          </div>
+
+        </div>
+      </div>
+      <!-- /content -->
+
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear" data-theme="b">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="faq">
+
+      <div data-role="header">
+        <h1>FAQ</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <div data-role="collapsible-set">
+          <div data-role="collapsible">
+            <h3>What is a hackathon?</h3>
+            <p>A team coding contest designed to challenge students to collaborate, build, and present in less than 24 hours.</p>
+          </div>
+          <div data-role="collapsible" data-collapsed="true">
+            <h3>Who can participate?</h3>
+            <p>All active students are encouraged to attend, regardless of major.</p>
+          </div>
+          <div data-role="collapsible" data-collapsed="true">
+            <h3>How many members on a team?</h3>
+            <p>4-5 members</p>
+          </div>
+        </div>
+      </div>
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /content -->
+
+    <div data-role="page" id="schedule">
+
+      <div data-role="header">
+        <h1>Schedule</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <table data-role="table" id="table-schedule" data-mode="reflow" class="ui-responsive table-stroke">
+          <thead>
+            <tr class="row-1 odd">
+              <th class="column-1">Date</th>
+              <th class="column-2">Time</th>
+              <th class="column-3">Description</th>
+            </tr>
+          </thead>
+          <tbody class="row-hover">
+            <tr class="row-2 even">
+              <td rowspan="4" class="column-1">Friday October 13, 2017</td>
+              <td class="column-2">12:00 PM</td>
+              <td class="column-3">Lunch</td>
+            </tr>
+            <tr class="row-3 odd">
+              <td class="column-2">1:00 PM</td>
+              <td class="column-3">Kick-off</td>
+            </tr>
+            <tr class="row-4 even">
+              <td class="column-2">2:00 PM</td>
+              <td class="column-3">Coding starts</td>
+            </tr>
+            <tr class="row-5 odd">
+              <td class="column-2">7:00 PM</td>
+              <td class="column-3">Dinner</td>
+            </tr>
+            <tr class="row-6 even">
+              <td rowspan="2" class="column-1">Saturday October 14, 2017</td>
+              <td class="column-2">8:00 AM</td>
+              <td class="column-3">Breakfast</td>
+            </tr>
+            <tr class="row-7 odd">
+              <td class="column-2">11:00 AM</td>
+              <td class="column-3">Presentations &amp; Judging</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="hackfooter" data-role="footer">
+        <div data-inline="true">
+          <a href="#home" data-role="button" data-inline="true" data-icon="home">Home</a>
+          <a href="#location" data-role="button" data-inline="true" data-icon="location">Location</a>
+          <a href="#email" data-role="button" data-inline="true" data-icon="mail">Email</a>
+          <a href="#phone" data-role="button" data-inline="true" data-icon="phone">Telephone</a>
+          <a href="#settings" data-role="button" data-inline="true" data-icon="gear">Settings</a>
+        </div>
+      </div>
+      <!-- /footer -->
+
+    </div>
+    <!-- /content -->
+  </body>
+
+</html>
