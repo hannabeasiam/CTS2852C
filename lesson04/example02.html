@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debugging Example 2</title>
+    <script>
+      function outputCount(maxCount) {
+        var count = 1;
+        console.log('Starting ' + count);
+        //change as count <= maxCount logic error
+        while (count < maxCount) {
+          document.write('Count = ' + count + '<br/>');
+          console.log('Inside ' + count);
+          count++;
+        };
+        console.log('Ending ' + count);
+      };
+    </script>
+  </head>
+  <body>
+    <h2>CIW JavaScript Specialist</h2>
+    <h3>Debugging Example 2</h3>
+    <script>
+      //if we fix output, it will works at this time but not good way to solve it
+      outputCount(5);
+    </script>
+  </body>
+</html>
