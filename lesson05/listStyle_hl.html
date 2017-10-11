@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>List Style type</title>
+  </head>
+  <body>
+    <h2>CIW JavaScript Specialist</h2>
+    <h3>List Stype Type</h3>
+    <script type="text/javascript">
+      var choice = prompt('Select a list type:' + '\nl-Numbered, 2-Lettered, 3-Roman numbered','');
+	  var listType = '';
+	  var listStyle = '';
+	  var validInput = true;
+	  switch(choice){
+	    case '1':
+		  listType = 'Numbered List';
+		  listStyle = 'decimal';
+		  break;
+		case '2':
+		  listType = 'Lettered numbered List';
+		  //there is upper and lower alpha for the list
+		  listStyle = 'upper-alpha';
+		  break;
+		case '3':
+		  listType = 'Roman numbered List';
+		  //there is upper and lower roman for the list
+		  listStyle = 'upper-roman';
+		  break;
+		default:
+		  validInput = false;		  
+	  }
+	  if (validInput) {
+	    document.write('<h4>' + listType + '</h4>');
+		document.write('<ol style="list-style-type: ' + listStyle + '">');
+		  for(var i = 1; i <= 5; i++) {
+		    document.write('<li>Item ' + i + '</li>');
+		  }
+		document.write('</ol>')	  
+	  } else {
+	    document.write('Invalid option selected');
+	  
+	  
+	  }
+    </script>
+  </body>
+</html>

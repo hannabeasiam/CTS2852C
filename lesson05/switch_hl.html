@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Switch</title>
+    <script type="text/javascript">
+	  var country = prompt('Enter the country you live in','');
+    </script>
+  </head>
+  <body>
+    <h2>CIW JavaScript Specialist</h2>
+    <h3>Switch</h3>
+    <script type="text/javascript">
+	  switch(country.toUpperCase()){
+	    case 'Broward':
+		  document.write('Go to Las Olas Blvd<br>');
+		  //use break to not excude all below one
+		  break;
+		case 'Miami-Dade':
+		case 'MIAMI DADE':
+		  document.write('Go to Wesst<br>');
+		  break;
+		case 'Monroe':
+		  document.write('Go to Key west<br>');
+		  //default is valid case statement
+		  break;
+		default:
+		  document.write('Go Home<br>');
+		  break;
+	  }
+    </script>
+  </body>
+</html>
