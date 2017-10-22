@@ -15,12 +15,24 @@ if not validate - prompt again 'this is not valid number'
 Ask user if you want to play again, please enter, no - close
 
 // validate 20-100
-coin16 = input / 16
-remain16 = input % 16
-if (remain16 >= 8 )
-{conin8 = remain16 /8
- remain8 = remain16 % 8
 
-}
+coin16 =( input / 16 )convert as integer
+remain16 = input % 16
+
+coin8 = ( remain16 / 8 ) convert as integer
+remain8 = input % 8
+
+con4 = (remain8 / 4 ) convert as integer
+remain4 = input % 4
+
+con2 = (remain4 / 2 ) convert as integer
+remain2 = input % 2
+
+con1 = (remain2 / 1 ) convert as integer
+remain1 = input % 1
+
+if any con16,8,4,2,1 is less then 1, do not display
+
+display con16,8,4,2,1 
+
 '''
-52

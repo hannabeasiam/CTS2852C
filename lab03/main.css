@@ -1,0 +1,18 @@
+body{
+	margin:20%;
+	background-color: #ccffff;
+	font-family:"Lucida Console"; 
+}
+
+.caculate {
+	font-family: "Lucida Console", monospace;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #ffb366; 
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ff751a;
+	border-radius: 5px;
+	color: white;
+  padding: 10px 32px;
+}
