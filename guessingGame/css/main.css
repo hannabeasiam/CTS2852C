@@ -1,0 +1,27 @@
+body {
+   background-image: url("game.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   font-family: "Times New Roman", Times, serif;
+   margin-left: 20%;
+}
+h1 {
+  margin: 10%;
+
+}
+main {
+  position: relative;
+  left: 30%;
+}
+.startButton {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #0000b3;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 32px;
+}
